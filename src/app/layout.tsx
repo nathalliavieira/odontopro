@@ -18,7 +18,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OdontoPRO",
+  title: "OdontoPRO - Find the best professionals in one place!",
+  description: "We are a platform for healthcare professionals focused on streamlining your care in a simplified and organized way.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+  openGraph: {
+    title: "OdontoPRO - Find the best professionals in one place!",
+    description: "We are a platform for healthcare professionals focused on streamlining your care in a simplified and organized way.",
+    images: [`${process.env.NEXT_PUBLIC_URL}/doctor-hero.png`]
+  }
 };
 
 export default function RootLayout({
